@@ -35,5 +35,7 @@ console.log(typeof peso);
 console.log(typeof altura);
 console.log(typeof funcionario);
 
-console.log("a variavel nome tem " + nome + "e é do tipo " 
-)
+console.log("a variavel nome tem " + nome + "e é do tipo " typeof nome)
+console.log("a variavel peso tem " + peso + "e é do tipo " typeof peso)
+console.log("a variavel altura tem " + altura + "e é do tipo " typeof altura)
+console.log("a variavel funcionario tem " + funcionario + "e é do tipo " typeof funcionario)
