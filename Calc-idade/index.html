@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc. Idade</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <main class="container">
+
+        <h1>Calculadora de Idade</h1>
+
+        <p>Informe seus dados para descobrir sua idade.</p>
+
+        <!-- Formulário de cadastro -->
+        <form id="formulario">
+
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date" id="nascimento" required>
+
+            <button type="submit">Calcular idade</button>
+
+        </form>
+
+        <!-- Área de resultado -->
+        <section id="resultado" class="resultado">
+
+            <h2>Dados cadastrados</h2>
+
+            <p>Nome: <span id="nomeResultado"></span></p>
+
+            <p>Data de nascimento:
+                <span id="dataResultado"></span>
+            </p>
+
+            <p>Idade:
+                <strong id="idadeResultado"></strong>
+            </p>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
