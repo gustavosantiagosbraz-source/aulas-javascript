@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de IMC</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Calculadora de IMC</h1>
+
+        <p>Preencha seus dados para calcular seu IMC.</p>
+
+        <!-- Formulário -->
+        <form id="formulario">
+
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+            <label for="peso">Peso (kg)</label>
+            <input type="number" id="peso" placeholder="Ex: 70" min="0.1" step="any" required>
+
+            <label for="altura">Altura (metros)</label>
+            <input type="number" id="altura" placeholder="Ex: 1.75" min="0.1" step="any" required>
+
+            <button type="submit">Calcular IMC</button>
+
+        </form>
+
+        <!-- Mensagem de erro -->
+        <p id="mensagemErro" class="erro"></p>
+
+        <!-- Resultado -->
+        <section id="resultado" class="resultado">
+
+            <h2>Resultado do cálculo</h2>
+
+            <p>Nome: <span id="nomeResultado"></span></p>
+
+            <p>Peso: <span id="pesoResultado"></span> kg</p>
+
+            <p>Altura: <span id="alturaResultado"></span> m</p>
+
+            <div class="imc-destaque">
+                <span>Seu IMC</span>
+                <strong id="imcResultado"></strong>
+            </div>
+
+            <p>Classificação:</p>
+
+            <strong id="classificacao"></strong>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
