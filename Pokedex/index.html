@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Pokédex</h1>
+
+        <!-- Barra de busca -->
+        <input type="text" id="campoBusca" placeholder="Buscar Pokémon...">
+
+        <!-- Filtros por tipo -->
+        <div class="filtros">
+            <button class="tipo" data-tipo="todos">Todos</button>
+            <button class="tipo" data-tipo="fire">Fogo</button>
+            <button class="tipo" data-tipo="water">Água</button>
+            <button class="tipo" data-tipo="grass">Planta</button>
+            <button class="tipo" data-tipo="electric">Elétrico</button>
+            <button class="tipo" data-tipo="psychic">Psíquico</button>
+            <button class="tipo" data-tipo="ice">Gelo</button>
+            <button class="tipo" data-tipo="rock">Pedra</button>
+            <button class="tipo" data-tipo="poison">Veneno</button>
+        </div>
+    </header>
+
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h2>Pokémons</h2>
+
+        <!-- Os cards serão criados pelo JavaScript -->
+        <section id="listaPokemons" class="lista-pokemons">
+        
+          
+        </section>
+    </main>
+</body>
+
+</html>

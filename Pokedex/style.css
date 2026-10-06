@@ -1,0 +1,131 @@
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+/* Cabeçalho */
+
+header {
+    background-color: #e3350d;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/* Campo de busca */
+
+#campoBusca {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+/* Filtros */
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tipo {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tipo:hover {
+    background-color: #ddd;
+}
+
+
+/* Conteúdo */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Lista de Pokémon */
+
+.lista-pokemons {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(180px, 1fr)
+    );
+    gap: 20px;
+}
+
+
+/* Card */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.card p {
+    color: #666;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .lista-pokemons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
